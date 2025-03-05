@@ -1,0 +1,85 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+    width: 220px;
+}
+
+.create-path, .create-polygon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    color: rgb(220, 220, 220);
+}
+
+.create-points {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.create-points-hint {
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+.create-points-hint--valid {
+    color: #85d085;
+}
+
+.create-points-hint--invalid {
+    color: #ff244c;
+}
+
+.first-point, .second-point {
+    display: flex;
+    gap: 10px;
+}
+
+.first-point button, .second-point button {
+    flex: 2;
+}
+
+.first-point-hint, .second-point-hint {
+    flex: 1;
+
+    align-content: center;
+    text-align: center;
+}
+
+.path-container {
+    color: rgb(220 220 220);
+}
+
+button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.01);
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid black;    
+    background-color: rgb(143 143 143);
+    color: rgb(220 220 220);
+    cursor: pointer;
+}
+
+button:not(:disabled):hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    background-color: rgb(98 98 98);
+    color: #9f9f9f;
+    cursor: not-allowed;
+}
+

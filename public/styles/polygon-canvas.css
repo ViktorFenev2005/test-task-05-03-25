@@ -1,0 +1,20 @@
+:host {
+    position: relative;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#workspace {
+    background-color: rgb(153, 153, 153);
+}
+
+#pathCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: transparent;
+    pointer-events: none;
+}
